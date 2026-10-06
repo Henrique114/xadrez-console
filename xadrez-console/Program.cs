@@ -1,26 +1,15 @@
-﻿using tabuleiro;
-using xadez;
-using xadrez_console.tabuleiro;
+﻿using xadez;
 
 namespace xadrez_console;
 class Program{
     static void Main(string[] args) 
     {
-        try {
+        PosicaoXadrez pos = new PosicaoXadrez('c', 7);
+        Console.WriteLine(pos);
 
-            Tabuleiro tab = new Tabuleiro(8, 8);
+        Console.WriteLine(pos.toPosicao());
 
-            tab.colocarPeca(new Torre(Cor.Pretas, tab), new Posicao(0, 0));
-            tab.colocarPeca(new Torre(Cor.Pretas, tab), new Posicao(1, 3));
-            tab.colocarPeca(new Torre(Cor.Pretas, tab), new Posicao(1, 9));
-            tab.colocarPeca(new Rei(Cor.Pretas, tab), new Posicao(2, 4));
+        Console.ReadLine();
 
-            Tela.imprimirTabuleiro(tab);
-        }
-        catch (TabuleiroException e)
-        {
-            Console.WriteLine(e.Message);
-        }
-       
     }
 }
