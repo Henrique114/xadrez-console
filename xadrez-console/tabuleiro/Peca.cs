@@ -15,7 +15,10 @@ namespace tabuleiro
             Tabuleiro = tabuleiro;
             QuantidadeMovimentos = 0;
         }
-
+        public void incrementarQtdMovimentos()
+        {
+            QuantidadeMovimentos++;
+        }
         public abstract bool[,] movimentosPossiveis();
     }
 }
