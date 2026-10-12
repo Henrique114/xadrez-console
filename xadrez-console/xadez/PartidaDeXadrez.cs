@@ -33,6 +33,13 @@ namespace xadez
             tab.colocarPeca(new Torre(Cor.Brancas, tab), new PosicaoXadrez('e', 2).toPosicao());
             tab.colocarPeca(new Torre(Cor.Brancas, tab), new PosicaoXadrez('e', 1).toPosicao());
             tab.colocarPeca(new Rei(Cor.Brancas, tab), new PosicaoXadrez('d', 1).toPosicao());
+
+            tab.colocarPeca(new Torre(Cor.Pretas, tab), new PosicaoXadrez('c', 8).toPosicao());
+            tab.colocarPeca(new Torre(Cor.Pretas, tab), new PosicaoXadrez('c', 7).toPosicao());
+            tab.colocarPeca(new Torre(Cor.Pretas, tab), new PosicaoXadrez('d', 7).toPosicao());
+            tab.colocarPeca(new Torre(Cor.Pretas, tab), new PosicaoXadrez('e', 7).toPosicao());
+            tab.colocarPeca(new Torre(Cor.Pretas, tab), new PosicaoXadrez('e', 8).toPosicao());
+            tab.colocarPeca(new Rei(Cor.Pretas, tab), new PosicaoXadrez('d', 8).toPosicao());
         }
     }
 }

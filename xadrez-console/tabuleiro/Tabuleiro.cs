@@ -24,6 +24,7 @@ namespace tabuleiro
 
         public Peca peca(Posicao pos)
         {
+            
             return Pecas[pos.Linha, pos.Coluna];
         }
         public void colocarPeca(Peca p, Posicao pos)
